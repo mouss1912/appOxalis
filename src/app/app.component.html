@@ -1,0 +1,72 @@
+<!-- <h1>Formulaire d'inscription</h1>
+<form #myform = "ngForm" (ngSubmit) = "onSubmit(myform)" >
+  <label for="nom">Nom</label>
+  <input type = "text" name = "nom" ngModel>
+  <br/>
+  <label for="prenom">Prenom</label>
+  <input type = "text" name = "prenom" ngModel>
+  <br/>
+  <label for="email">Email</label>
+  <input type = "email" name = "email" ngModel>
+  <br/>
+  <label for="pseudo">Pseudo</label>
+  <input type = "text" name = "pseudo" ngModel>
+  <br/>
+  <label for="mdp">Mot de pass</label>
+  <input type="password" name="mdp" ngModel> <br/>
+  <input type = "submit" value = "Envoyer">
+</form> -->
+
+<!-- <h1>Inscription</h1>
+    <!-- <form [formGroup] = "uploadForm" (ngSubmit)="onSubmit()">       -->
+  <!-- <form # (ngSubmit)="onSubmit()">  
+
+      <div>
+          <label for="nom">Nom</label>
+          <input type = "text" name = "nom" [(ngModel)]="utilisateurForm.nom">
+      </div>
+      <div>
+          <label for="prenom">Prenom</label>
+          <input type = "text" name = "prenom">
+      </div>
+      <div>
+          <label for="email">Email</label>
+          <input type = "email" name = "email">
+      </div>
+      <div>
+          <label for="pseudo">Pseudo</label>
+          <input type = "text" name = "pseudo">
+      </div>
+      <label for="password">Mot de pass</label>
+      <input type="password" name="password"> <br/>
+      <div>
+        <button type="submit">Inscrire</button>
+      </div>
+    </form> --> 
+
+    <!-- Nouveau test -->
+    <h1>Inscription</h1>
+  <form #monForm="ngForm" (ngSubmit)="onSubmit()">  
+
+      <div>
+          <label for="nom">Nom</label>
+          <input type = "text" name = "nom" [(ngModel)]="utilisateurForm.nom">
+      </div>
+      <div>
+          <label for="prenom">Prenom</label>
+          <input type = "text" name = "prenom" [(ngModel)]="utilisateurForm.prenom">
+      </div>
+      <div>
+          <label for="email">Email</label>
+          <input type = "email" name = "email" [(ngModel)]= "utilisateurForm.email">
+      </div>
+      <div>
+          <label for="pseudo">Pseudo</label>
+          <input type = "text" name = "pseudo" [(ngModel)]="utilisateurForm.pseudo">
+      </div>
+      <label for="password">Mot de pass</label>
+      <input type="password" name="password" [(ngModel)]="utilisateurForm.password"> <br/>
+      <div>
+        <button>Inscrire</button>
+      </div>
+    </form>
